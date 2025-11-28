@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocusFlow Study Planner</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>FocusFlow</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#planner">Planner</a></li>
+                <li><a href="#timer-section">Timer</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="page-section hero">
+            <h2>Master Your Studies, Maximize Your Focus.</h2>
+            <p>Welcome to FocusFlow, your personal assistant for organizing tasks and boosting productivity.</p>
+            <div id="quote-container">
+                <blockquote id="motivational-quote">Strive for progress, not perfection.</blockquote>
+                <p id="quote-author">— Unknown</p>
+            </div>
+            <div class="cta-buttons">
+                <a href="#planner" class="cta-btn primary">Start Planning</a>
+                <a href="#timer-section" class="cta-btn secondary">Use Study Timer</a>
+            </div>
+        </section>
+
+        <section id="planner" class="page-section">
+            <h2>📚 Task Planner</h2>
+            <div class="container">
+                <div class="task-input-section">
+                    <h3>Add a New Task</h3>
+                    <form id="task-form">
+                        <input type="text" id="task-subject" placeholder="Subject (e.g., Programming)" required>
+                        <input type="text" id="task-topic" placeholder="Topic (e.g., Recursion)" required>
+                        <input type="date" id="task-due-date" required>
+                        <button type="submit" class="cta-btn primary">Add Task</button>
+                    </form>
+                </div>
+                
+                <div class="task-list-section">
+                    <h3>📝 My Current Tasks</h3>
+                    <ul id="task-list">
+                        </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="timer-section" class="page-section">
+            <h2>⏲️ Pomodoro Study Timer</h2>
+            <div class="timer-widget">
+                <div id="timer-display">25:00</div>
+                <p id="timer-mode">Study Time</p>
+                <div class="timer-controls">
+                    <button id="start-btn" class="cta-btn primary">Start</button>
+                    <button id="pause-btn" class="cta-btn secondary">Pause</button>
+                    <button id="reset-btn" class="cta-btn secondary">Reset</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 FocusFlow Study Planner | Simplified Assignment 3</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
